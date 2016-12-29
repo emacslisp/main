@@ -27,6 +27,7 @@
 		9C10A4ED1E13B56F00533028 /* LearningObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C10A4F01E13B56F00533028 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C10A4F71E13CF4D00533028 /* BooleanTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanTest.m; sourceTree = "<group>"; };
+		9C3242B01E1553FA00A58FF8 /* BooleanTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooleanTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				9C10A4F01E13B56F00533028 /* main.m */,
 				9C10A4F71E13CF4D00533028 /* BooleanTest.m */,
+				9C3242B01E1553FA00A58FF8 /* BooleanTest.h */,
 			);
 			path = LearningObjC;
 			sourceTree = "<group>";
@@ -243,6 +245,7 @@
 				9C10A4F61E13B56F00533028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

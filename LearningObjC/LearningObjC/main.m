@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BooleanTest.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        
+        //@example: Objective-C : objc class call static method
+        [BooleanTest main];
     }
     return 0;
 }
