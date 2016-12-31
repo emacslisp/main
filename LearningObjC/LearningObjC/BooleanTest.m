@@ -17,8 +17,12 @@
 -(void)booleanTestMethod
 {
     bool a = YES;
+    bool b = NO;
     //NSLog(a);
-    //@todo: convert bool to string
+    //@example: objc - NSLog bool
+    NSLog(@"this is boolean %d",a);
+    NSLog(@"this is boolean %s",b?"true":"false");
+    
     NSLog(@"This is body method");
 }
 

@@ -11,10 +11,10 @@
 
 @interface BooleanTest : NSObject
 
-//@example: Objective-C : objc class non-static method declare
+//@example: objc - objc class non-static method declare
 -(void) booleanTestMethod;
 
-//@example: Objective-C : objc class static method declare
+//@example: objc - objc class static method declare
 +(void) main;
 
 @end

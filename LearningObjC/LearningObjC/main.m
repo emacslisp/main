@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        //@example: Objective-C : objc class call static method
+        //@example: objc - objc class call static method
         [BooleanTest main];
     }
     return 0;
