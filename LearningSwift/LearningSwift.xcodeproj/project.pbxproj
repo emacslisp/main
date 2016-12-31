@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C967FD11E1761DB00306831 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FD01E1761DB00306831 /* main.swift */; };
 		9C967FD81E1761F700306831 /* BooleanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FD71E1761F700306831 /* BooleanTest.swift */; };
+		9C967FDA1E1791C600306831 /* ArrayAndHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FD91E1791C600306831 /* ArrayAndHashMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		9C967FCD1E1761DB00306831 /* LearningSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C967FD01E1761DB00306831 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9C967FD71E1761F700306831 /* BooleanTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooleanTest.swift; sourceTree = "<group>"; };
+		9C967FD91E1791C600306831 /* ArrayAndHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayAndHashMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				9C967FD01E1761DB00306831 /* main.swift */,
 				9C967FD71E1761F700306831 /* BooleanTest.swift */,
+				9C967FD91E1791C600306831 /* ArrayAndHashMap.swift */,
 			);
 			path = LearningSwift;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				9C967FD81E1761F700306831 /* BooleanTest.swift in Sources */,
 				9C967FD11E1761DB00306831 /* main.swift in Sources */,
+				9C967FDA1E1791C600306831 /* ArrayAndHashMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
