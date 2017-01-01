@@ -24,8 +24,20 @@ void FileAccess::timeTest()
     }
 }
 
+//@example: linux c - write api
+void FileAccess::simple_write()
+{
+    if(write(1,"Here is some data\n",18)!=18)
+    {
+        write(2,"test\n",5);
+    }
+}
+
+
+
 void FileAccess::main()
 {
     FileAccess s;
-    s.timeTest();
+    //s.timeTest();
+    s.simple_write();
 }

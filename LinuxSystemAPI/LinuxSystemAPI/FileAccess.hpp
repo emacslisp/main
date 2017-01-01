@@ -17,6 +17,7 @@ class FileAccess
 public:
     void timeTest();
     void main();
+    void simple_write();
 };
 
 #endif /* FileAccess_hpp */
