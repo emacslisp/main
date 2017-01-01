@@ -38,6 +38,6 @@ void FileAccess::simple_write()
 void FileAccess::main()
 {
     FileAccess s;
-    //s.timeTest();
+    s.timeTest();
     s.simple_write();
 }
