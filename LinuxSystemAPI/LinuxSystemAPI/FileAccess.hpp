@@ -18,6 +18,8 @@ public:
     void timeTest();
     void main();
     void simple_write();
+    
+    void recursive();
 };
 
 #endif /* FileAccess_hpp */
