@@ -10,7 +10,16 @@
 #define FileAccess_hpp
 
 #include <stdio.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
+typedef struct {
+    int integer;
+    char string[24];
+} RECORD;
 
 class FileAccess
 {
@@ -20,6 +29,7 @@ public:
     void simple_write();
     
     void recursive();
+    void mmapLib();
 };
 
 #endif /* FileAccess_hpp */

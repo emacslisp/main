@@ -73,7 +73,32 @@ void printdir(char *dir, int depth)
     closedir(dp);
 }
 
-
+void FileAccess::mmapLib()
+{
+    #define NRECORDS (100)
+    
+    RECORD record, *mapped;
+    int i, f;
+    FILE *fp;
+    fp = fopen("records.dat","w+");
+    for(i=0; i<NRECORDS; i++) {
+        record.integer = i;
+        sprintf(record.string,"RECORD-%d",i);
+        fwrite(&record,sizeof(record),1,fp);
+    }
+    fclose(fp);
+    
+    f = open("records.dat",O_RDWR);
+    mapped = (RECORD *)mmap(0, NRECORDS*sizeof(record),
+                            PROT_READ|PROT_WRITE, MAP_SHARED, f, 0);
+    mapped[43].integer = 243;
+    sprintf(mapped[43].string,"RECORD-%d",mapped[43].integer);
+    msync((void *)mapped, NRECORDS*sizeof(record), MS_ASYNC);
+    munmap((void *)mapped, NRECORDS*sizeof(record));
+    close(f);
+    printf("mmap done!!");
+    exit(0);
+}
 
 
 void FileAccess::main()
@@ -81,5 +106,5 @@ void FileAccess::main()
     FileAccess s;
     //s.timeTest();
     //s.simple_write();
-    s.recursive();
+    s.mmapLib();
 }
