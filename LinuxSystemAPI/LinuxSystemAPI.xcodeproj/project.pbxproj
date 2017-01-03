@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */; };
 		9C967FE81E1796F400306831 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FE71E1796F400306831 /* main.cpp */; };
 		9C967FF01E17974000306831 /* FileAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FEE1E17974000306831 /* FileAccess.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxEnvironment.cpp; sourceTree = "<group>"; };
+		9C4102921E1BEB7400E9197C /* LinuxEnvironment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinuxEnvironment.hpp; sourceTree = "<group>"; };
 		9C967FE41E1796F400306831 /* LinuxSystemAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinuxSystemAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C967FE71E1796F400306831 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9C967FEE1E17974000306831 /* FileAccess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileAccess.cpp; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				9C967FE71E1796F400306831 /* main.cpp */,
 				9C967FEE1E17974000306831 /* FileAccess.cpp */,
 				9C967FEF1E17974000306831 /* FileAccess.hpp */,
+				9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */,
+				9C4102921E1BEB7400E9197C /* LinuxEnvironment.hpp */,
 			);
 			path = LinuxSystemAPI;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				9C967FE81E1796F400306831 /* main.cpp in Sources */,
 				9C967FF01E17974000306831 /* FileAccess.cpp in Sources */,
+				9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +251,7 @@
 				9C967FED1E1796F400306831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

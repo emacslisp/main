@@ -8,8 +8,8 @@
 
 #include <iostream>
 #include "FileAccess.hpp"
-
+#include "LinuxEnvironment.hpp"
 int main(int argc, const char * argv[]) {
-    FileAccess s;
-    s.main();
+    LinuxEnvironment s;
+    s.main(argc, argv);
 }
