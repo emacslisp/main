@@ -73,6 +73,8 @@ void printdir(char *dir, int depth)
     closedir(dp);
 }
 
+
+//@example: linux c - mmap to sync memory and file 
 void FileAccess::mmapLib()
 {
     #define NRECORDS (100)
