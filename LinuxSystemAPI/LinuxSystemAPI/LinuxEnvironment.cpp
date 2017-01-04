@@ -61,6 +61,7 @@ void LinuxEnvironment::getOptApiLib(int argc,  char * const argv[])
         printf("argument: %s\n", argv[optind]);
 }
 
+//@example: linux c - getOpt_long api
 void LinuxEnvironment::getOpt_longLib(int argc, char * argv[])
 {
     int opt;
@@ -104,7 +105,7 @@ void LinuxEnvironment::getEnvLib()
     printf("%s\n",value);
 }
 
-//@example: linux c - environ api
+//@example: linux c - environ api to get all environment from system.
 void LinuxEnvironment::environLib()
 {
     extern char **environ;
@@ -159,10 +160,47 @@ void LinuxEnvironment::strfTimeLib()
     printf("time: %02d:%02d\n",
            tm_ptr->tm_hour, tm_ptr->tm_min);
 }
+//@example: linux c - tmpfile and mkstemp()
+void LinuxEnvironment::tempFileLib()
+{
+    char tmpname[L_tmpnam];
+    char *filename;
+    FILE *tmpfp;
+    filename = tmpnam(tmpname);
+    printf("Temporary file name is: %s\n", filename);
+    tmpfp = tmpfile();
+    if(tmpfp)
+        printf("Opened a temporary file OK\n");
+    else
+        perror("tmpfile");
+}
+
+#include <sys/types.h>
+#include <pwd.h>
+#include <stdio.h>
+#include <unistd.h>
+
+void LinuxEnvironment::userLib()
+{
+    uid_t uid;
+    gid_t gid;
+    struct passwd *pw;
+    uid = getuid();
+    gid = getgid();
+    printf("User is %s\n", getlogin());
+    printf("User IDs: uid=%d, gid=%d\n", uid, gid);
+    pw = getpwuid(uid);
+    printf("UID passwd entry:\n name=%s, uid=%d, gid=%d, home=%s, shell=%s\n",
+           pw->pw_name, pw->pw_uid, pw->pw_gid, pw->pw_dir, pw->pw_shell);
+    pw = getpwnam("root");
+    printf("root passwd entry:\n");
+    printf("name=%s, uid=%d, gid=%d, home=%s, shell=%s\n",
+           pw->pw_name, pw->pw_uid, pw->pw_gid, pw->pw_dir, pw->pw_shell);
+}
 
 void LinuxEnvironment::main(int argc, char * argv[])
 {
     LinuxEnvironment s;
     //s.getOpt_longLib(argc, argv);
-    s.strfTimeLib();
+    s.userLib();
 }

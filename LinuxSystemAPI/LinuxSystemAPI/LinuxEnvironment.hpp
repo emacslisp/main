@@ -32,6 +32,10 @@ public:
     
     void strfTimeLib();
     
+    void tempFileLib();
+    
+    void userLib();
+    
     void main(int argc, char * argv[]);
 };
 
