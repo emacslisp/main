@@ -9,6 +9,10 @@
 #ifndef LinuxEnvironment_hpp
 #define LinuxEnvironment_hpp
 
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <time.h>
 
 class LinuxEnvironment
 {
@@ -18,6 +22,15 @@ public:
     
     void getOpt_longLib(int argc, char * argv[]);
 
+    void getEnvLib();
+    
+    void environLib();
+    
+    void gmTimeLib();
+
+    void cTimeLib();
+    
+    void strfTimeLib();
     
     void main(int argc, char * argv[]);
 };

@@ -96,10 +96,73 @@ void LinuxEnvironment::getOpt_longLib(int argc, char * argv[])
     
 }
 
+//@example: linux c - get environment lib
+void LinuxEnvironment::getEnvLib()
+{
+    char *value;
+    value = getenv("PATH");
+    printf("%s\n",value);
+}
 
+//@example: linux c - environ api
+void LinuxEnvironment::environLib()
+{
+    extern char **environ;
+    
+    char **env = environ;
+    while(*env) {
+        printf("%s\n",*env);
+        env++;
+    }
+}
+
+//@example: linux c - gmTime api lib
+void LinuxEnvironment::gmTimeLib()
+{
+    struct tm *tm_ptr;
+    time_t the_time;
+    (void) time(&the_time);
+    tm_ptr = gmtime(&the_time);
+    printf("Raw time is %ld\n", the_time);
+    printf("gmtime gives:\n");
+    printf("date: %02d/%02d/%02d\n",
+           tm_ptr->tm_year, tm_ptr->tm_mon+1, tm_ptr->tm_mday);
+    printf("time: %02d:%02d:%02d\n",
+           tm_ptr->tm_hour, tm_ptr->tm_min, tm_ptr->tm_sec);
+}
+
+void LinuxEnvironment::cTimeLib()
+{
+    time_t timeval;
+    (void)time(&timeval);
+    printf("The date is: %s", ctime(&timeval));
+}
+
+void LinuxEnvironment::strfTimeLib()
+{
+    struct tm *tm_ptr, timestruct;
+    time_t the_time;
+    char buf[256];
+    char *result;
+    (void) time(&the_time);
+    tm_ptr = localtime(&the_time);
+    strftime(buf, 256, "%A %d %B, %I:%S %p", tm_ptr);
+    printf("strftime gives: %s\n", buf);
+    strcpy(buf,"Sat 26 July 2003, 17:53 will do fine");
+    printf("calling strptime with: %s\n", buf);
+    tm_ptr = &timestruct;
+    result = strptime(buf,"%a %d %b %Y, %R", tm_ptr);
+    printf("strptime consumed up to: %s\n", result);
+    printf("strptime gives:\n");
+    printf("date: %02d/%02d/%02d\n",
+           tm_ptr->tm_year % 100, tm_ptr->tm_mon+1, tm_ptr->tm_mday);
+    printf("time: %02d:%02d\n",
+           tm_ptr->tm_hour, tm_ptr->tm_min);
+}
 
 void LinuxEnvironment::main(int argc, char * argv[])
 {
     LinuxEnvironment s;
-    s.getOpt_longLib(argc, argv);
+    //s.getOpt_longLib(argc, argv);
+    s.strfTimeLib();
 }
