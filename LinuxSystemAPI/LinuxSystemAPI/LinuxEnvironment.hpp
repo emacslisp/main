@@ -15,6 +15,10 @@ class LinuxEnvironment
 public:
     void getConsoleArg(int argc, const char *argv[]);
     void getOptApiLib(int argc, char * const argv[]);
+    
+    void getOpt_longLib(int argc, char * argv[]);
+
+    
     void main(int argc, char * argv[]);
 };
 
