@@ -9,7 +9,7 @@
 #include <iostream>
 #include "FileAccess.hpp"
 #include "LinuxEnvironment.hpp"
-int main(int argc, const char * argv[]) {
+int main(int argc,  char *  argv[]) {
     LinuxEnvironment s;
     s.main(argc, argv);
 }

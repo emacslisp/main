@@ -7,6 +7,9 @@
 //
 
 #include "LinuxEnvironment.hpp"
+#include <stdio.h>
+#include <unistd.h>
+#include <getopt.h>
 
 //@example: Linux c - get console argument using int argc, const char *argv[]
 void LinuxEnvironment::getConsoleArg(int argc, const char *argv[])
@@ -21,8 +24,45 @@ void LinuxEnvironment::getConsoleArg(int argc, const char *argv[])
     
 }
 
-void LinuxEnvironment::main(int argc, const char *argv[])
+
+//@example: c++ - const char* and char const * and char* const
+/*
+ int       *      mutable_pointer_to_mutable_int;
+ int const *      mutable_pointer_to_constant_int;
+ int       *const constant_pointer_to_mutable_int;
+ int const *const constant_pointer_to_constant_int;
+ */
+
+//@example: linux c - getopt with optarg
+void LinuxEnvironment::getOptApiLib(int argc,  char * const argv[])
+{
+    int opt;
+    const char *p = "if:lr";
+    
+    while((opt = getopt(argc, argv, p)) != -1) {
+        switch(opt) {
+            case 'i':
+            case 'l':
+            case 'r':
+                printf("option: %c\n", opt);
+                break;
+            case 'f':
+                printf("filename: %s\n", optarg);
+                break;
+            case ':':
+                printf("option needs a value\n");
+                break;
+            case '?':
+                printf("unknown option: %c\n", optopt);
+                break;
+        }
+    }
+    for(; optind < argc; optind++)
+        printf("argument: %s\n", argv[optind]);
+}
+
+void LinuxEnvironment::main(int argc, char * argv[])
 {
     LinuxEnvironment s;
-    s.getConsoleArg(argc, argv);
+    s.getOptApiLib(argc, argv);
 }

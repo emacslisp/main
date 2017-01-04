@@ -9,14 +9,13 @@
 #ifndef LinuxEnvironment_hpp
 #define LinuxEnvironment_hpp
 
-#include <stdio.h>
 
 class LinuxEnvironment
 {
 public:
     void getConsoleArg(int argc, const char *argv[]);
-    
-    void main(int argc, const char *argv[]);
+    void getOptApiLib(int argc, char * const argv[]);
+    void main(int argc, char * argv[]);
 };
 
 
