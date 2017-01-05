@@ -38,6 +38,8 @@ public:
     
     void hostNameLib();
     
+    void logMaskLib();
+    
     void main(int argc, char * argv[]);
 };
 

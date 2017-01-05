@@ -221,9 +221,22 @@ void LinuxEnvironment::hostNameLib()
     exit(0);
 }
 
+//@example: linux c - openlog and syslog and syslogmask
+void LinuxEnvironment::logMaskLib()
+{
+    int logmask;
+    openlog("logmask", LOG_PID|LOG_CONS, LOG_USER);
+    syslog(LOG_INFO,"informative message, pid = %d", getpid());
+    syslog(LOG_DEBUG,"debug message, should appear");
+    logmask = setlogmask(LOG_UPTO(LOG_NOTICE));
+    syslog(LOG_DEBUG,"debug message, should not appear");
+    printf("end\n");
+}
+
+
 void LinuxEnvironment::main(int argc, char * argv[])
 {
     LinuxEnvironment s;
     //s.getOpt_longLib(argc, argv);
-    s.hostNameLib();
+    s.logMaskLib();
 }
