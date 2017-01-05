@@ -36,6 +36,8 @@ public:
     
     void userLib();
     
+    void hostNameLib();
+    
     void main(int argc, char * argv[]);
 };
 
