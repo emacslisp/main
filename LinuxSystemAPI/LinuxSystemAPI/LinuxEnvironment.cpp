@@ -200,7 +200,9 @@ void LinuxEnvironment::userLib()
 
 
 #include <sys/utsname.h>
+#include <syslog.h>
 
+//@example: linux c - get hostname
 void LinuxEnvironment::hostNameLib()
 {
     char computer[256];
@@ -213,6 +215,9 @@ void LinuxEnvironment::hostNameLib()
     printf("System is %s on %s hardware\n", uts.sysname, uts.machine);
     printf("Nodename is %s\n", uts.nodename);
     printf("Version is %s, %s\n", uts.release, uts.version);
+    
+    //@example: linux c - syslog to /var/log/system.log in mac os x
+    syslog(LOG_ERR|LOG_USER,"#######oops - %m\n");
     exit(0);
 }
 
