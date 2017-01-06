@@ -10,6 +10,7 @@
 		9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */; };
 		9C967FE81E1796F400306831 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FE71E1796F400306831 /* main.cpp */; };
 		9C967FF01E17974000306831 /* FileAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FEE1E17974000306831 /* FileAccess.cpp */; };
+		9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCFFF41E1F551F006E2E67 /* LinuxTerminal.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		9C967FE71E1796F400306831 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9C967FEE1E17974000306831 /* FileAccess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileAccess.cpp; sourceTree = "<group>"; };
 		9C967FEF1E17974000306831 /* FileAccess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileAccess.hpp; sourceTree = "<group>"; };
+		9CCCFFF41E1F551F006E2E67 /* LinuxTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxTerminal.cpp; sourceTree = "<group>"; };
+		9CCCFFF51E1F551F006E2E67 /* LinuxTerminal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinuxTerminal.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				9C967FEF1E17974000306831 /* FileAccess.hpp */,
 				9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */,
 				9C4102921E1BEB7400E9197C /* LinuxEnvironment.hpp */,
+				9CCCFFF41E1F551F006E2E67 /* LinuxTerminal.cpp */,
+				9CCCFFF51E1F551F006E2E67 /* LinuxTerminal.hpp */,
 			);
 			path = LinuxSystemAPI;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			files = (
 				9C967FE81E1796F400306831 /* main.cpp in Sources */,
 				9C967FF01E17974000306831 /* FileAccess.cpp in Sources */,
+				9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */,
 				9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
