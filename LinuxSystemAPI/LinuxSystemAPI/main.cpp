@@ -10,6 +10,6 @@
 #include "FileAccess.hpp"
 #include "LinuxEnvironment.hpp"
 int main(int argc,  char *  argv[]) {
-    LinuxEnvironment s;
+    FileAccess s;
     s.main(argc, argv);
 }

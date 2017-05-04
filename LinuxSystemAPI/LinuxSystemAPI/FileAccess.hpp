@@ -25,7 +25,7 @@ class FileAccess
 {
 public:
     void timeTest();
-    void main();
+    void main(int argc,  char *  argv[]);
     void simple_write();
     
     void recursive();

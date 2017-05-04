@@ -103,10 +103,10 @@ void FileAccess::mmapLib()
 }
 
 
-void FileAccess::main()
+void FileAccess::main(int argc,  char *  argv[])
 {
     FileAccess s;
     //s.timeTest();
     //s.simple_write();
-    s.mmapLib();
+    s.timeTest();
 }
