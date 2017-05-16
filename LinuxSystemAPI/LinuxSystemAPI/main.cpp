@@ -9,7 +9,9 @@
 #include <iostream>
 #include "FileAccess.hpp"
 #include "LinuxEnvironment.hpp"
+#include "Leetcode_32.hpp"
+
 int main(int argc,  char *  argv[]) {
-    FileAccess s;
-    s.main(argc, argv);
+    Leetcode_32 s;
+    cout<<s.longestValidParentheses(")(")<<endl;;
 }
