@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		969398091ECA82ED00566798 /* Leetcode_32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969398071ECA82ED00566798 /* Leetcode_32.cpp */; };
 		9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */; };
+		9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */; };
 		9C967FE81E1796F400306831 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FE71E1796F400306831 /* main.cpp */; };
 		9C967FF01E17974000306831 /* FileAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FEE1E17974000306831 /* FileAccess.cpp */; };
 		9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCFFF41E1F551F006E2E67 /* LinuxTerminal.cpp */; };
@@ -31,6 +32,8 @@
 		969398081ECA82ED00566798 /* Leetcode_32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Leetcode_32.hpp; sourceTree = "<group>"; };
 		9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxEnvironment.cpp; sourceTree = "<group>"; };
 		9C4102921E1BEB7400E9197C /* LinuxEnvironment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinuxEnvironment.hpp; sourceTree = "<group>"; };
+		9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = word_pattern_290.cpp; path = ../word_pattern_290.cpp; sourceTree = "<group>"; };
+		9C75B2681EF6D12D00DFCA99 /* word_pattern_290.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = word_pattern_290.hpp; path = ../word_pattern_290.hpp; sourceTree = "<group>"; };
 		9C967FE41E1796F400306831 /* LinuxSystemAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinuxSystemAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C967FE71E1796F400306831 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9C967FEE1E17974000306831 /* FileAccess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileAccess.cpp; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		9C967FE61E1796F400306831 /* LinuxSystemAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */,
+				9C75B2681EF6D12D00DFCA99 /* word_pattern_290.hpp */,
 				9C967FE71E1796F400306831 /* main.cpp */,
 				9C967FEE1E17974000306831 /* FileAccess.cpp */,
 				9C967FEF1E17974000306831 /* FileAccess.hpp */,
@@ -143,6 +148,7 @@
 			files = (
 				9C967FE81E1796F400306831 /* main.cpp in Sources */,
 				9C967FF01E17974000306831 /* FileAccess.cpp in Sources */,
+				9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */,
 				9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */,
 				9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */,
 				969398091ECA82ED00566798 /* Leetcode_32.cpp in Sources */,

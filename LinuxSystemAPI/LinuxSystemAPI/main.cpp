@@ -10,8 +10,9 @@
 #include "FileAccess.hpp"
 #include "LinuxEnvironment.hpp"
 #include "Leetcode_32.hpp"
+#include "word_pattern_290.hpp"
 
 int main(int argc,  char *  argv[]) {
-    Leetcode_32 s;
-    cout<<s.longestValidParentheses(")(")<<endl;;
+    word_pattern_290 s;
+    s.main_entry();
 }
