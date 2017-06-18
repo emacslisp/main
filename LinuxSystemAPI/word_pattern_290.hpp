@@ -35,13 +35,16 @@ public:
         {
             std::string sub;
             iss >> sub;
-            result.push_back(sub);
+            if(sub != "")
+                result.push_back(sub);
         } while (iss);
         return result;
     }
     
     bool wordPattern(string pattern, string str) {
         std::unordered_map<char, std::string> map;
+        std::unordered_map<std::string, std::string> existed;
+        
         vector<string> s = splitBySpace(str);
         if(s.size() != pattern.size()) return false;
         
@@ -52,8 +55,15 @@ public:
                 if(map[c] != s[i])
                     return false;
             }
-            else
+            else {
+                if(existed.count(s[i]))
+                    return false;
+                
+                existed[s[i]] = s[i];
+                
                 map[c] = s[i];
+                
+            }
         }
         
         return true;
@@ -61,7 +71,7 @@ public:
     }
     
     void main_entry() {
-        cout<<wordPattern("abba","dog cat cat dog")<<endl;
+        cout<<wordPattern("abba","dog dog dog dog")<<endl;
     }
     
 };
