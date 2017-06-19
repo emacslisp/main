@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963691CE1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */; };
 		969398091ECA82ED00566798 /* Leetcode_32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969398071ECA82ED00566798 /* Leetcode_32.cpp */; };
 		9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */; };
 		9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Merge_Two_Binary_Trees_617.cpp; sourceTree = "<group>"; };
 		969398071ECA82ED00566798 /* Leetcode_32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leetcode_32.cpp; sourceTree = "<group>"; };
 		969398081ECA82ED00566798 /* Leetcode_32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Leetcode_32.hpp; sourceTree = "<group>"; };
 		9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxEnvironment.cpp; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				9CCCFFF51E1F551F006E2E67 /* LinuxTerminal.hpp */,
 				969398071ECA82ED00566798 /* Leetcode_32.cpp */,
 				969398081ECA82ED00566798 /* Leetcode_32.hpp */,
+				963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */,
 			);
 			path = LinuxSystemAPI;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				9C967FE81E1796F400306831 /* main.cpp in Sources */,
 				9C967FF01E17974000306831 /* FileAccess.cpp in Sources */,
+				963691CE1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp in Sources */,
 				9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */,
 				9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */,
 				9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */,

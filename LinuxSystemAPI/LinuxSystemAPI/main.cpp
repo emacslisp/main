@@ -11,8 +11,9 @@
 #include "LinuxEnvironment.hpp"
 #include "Leetcode_32.hpp"
 #include "word_pattern_290.hpp"
+#include "Merge_Two_Binary_Trees_617.cpp"
 
 int main(int argc,  char *  argv[]) {
-    word_pattern_290 s;
+    Merge_Two_Binary_Trees s;
     s.main_entry();
 }
