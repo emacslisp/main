@@ -22,6 +22,7 @@ public:
         
     }
     
+    // https://leetcode.com/problems/merge-two-binary-trees/#/description
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
         
         if(t1!=NULL && t2 !=NULL) {
