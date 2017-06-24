@@ -13,6 +13,7 @@
 		9C12A28F1EFECA5800E0C5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A28D1EFECA5800E0C5B2 /* Main.storyboard */; };
 		9C12A2911EFECA5800E0C5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A2901EFECA5800E0C5B2 /* Assets.xcassets */; };
 		9C12A2941EFECA5800E0C5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A2921EFECA5800E0C5B2 /* LaunchScreen.storyboard */; };
+		9C12A29D1EFED2F100E0C5B2 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A29B1EFED2F100E0C5B2 /* Main1.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9C12A2901EFECA5800E0C5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C12A2931EFECA5800E0C5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C12A2951EFECA5800E0C5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C12A29C1EFED2F100E0C5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		9C12A2831EFECA5800E0C5B2 /* UICatalog */ = {
 			isa = PBXGroup;
 			children = (
+				9C12A29B1EFED2F100E0C5B2 /* Main1.storyboard */,
 				9C12A2871EFECA5800E0C5B2 /* AppDelegate.h */,
 				9C12A2881EFECA5800E0C5B2 /* AppDelegate.m */,
 				9C12A28A1EFECA5800E0C5B2 /* ViewController.h */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C12A2941EFECA5800E0C5B2 /* LaunchScreen.storyboard in Resources */,
+				9C12A29D1EFED2F100E0C5B2 /* Main1.storyboard in Resources */,
 				9C12A2911EFECA5800E0C5B2 /* Assets.xcassets in Resources */,
 				9C12A28F1EFECA5800E0C5B2 /* Main.storyboard in Resources */,
 			);
@@ -174,6 +178,14 @@
 				9C12A2931EFECA5800E0C5B2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9C12A29B1EFED2F100E0C5B2 /* Main1.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C12A29C1EFED2F100E0C5B2 /* Base */,
+			);
+			name = Main1.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
