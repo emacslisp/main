@@ -1,0 +1,39 @@
+/*
+
+ <samplecode>
+
+ <abstract>Strings that should be localized.</abstract>
+
+ </samplecode>
+
+ */
+
+"top left" = "top left";
+"left" = "left";
+"bottom left" = "bottom left";
+"top" = "top";
+"center" = "center";
+"bottom" = "bottom";
+"top right" = "top right";
+"right" = "right";
+"bottom right" = "bottom right";
+"DescriptionAndLocationFormatter" = "%@ %@";
+
+"X" = "X";
+"O" = "O";
+"empty" = "empty";
+
+"tic tac toe board" = "tic tac toe board";
+
+"reset game" = "reset game";
+
+"ComputerPlayedFormatter" = "computer played %@";
+"ComputerPlayerAndStatusFormatter" = "%@, %@";
+
+"X's turn" = "X's turn";
+"O's turn" = "O's turn";
+"X wins!" = "X wins!";
+"O wins!" = "O wins!";
+"It's a tie" = "It's a tie";
+
+
