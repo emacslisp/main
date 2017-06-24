@@ -14,6 +14,7 @@
 		9C12A2911EFECA5800E0C5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A2901EFECA5800E0C5B2 /* Assets.xcassets */; };
 		9C12A2941EFECA5800E0C5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A2921EFECA5800E0C5B2 /* LaunchScreen.storyboard */; };
 		9C12A29D1EFED2F100E0C5B2 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A29B1EFED2F100E0C5B2 /* Main1.storyboard */; };
+		9C12A2A01EFED65C00E0C5B2 /* MainTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12A29E1EFED65C00E0C5B2 /* MainTable.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9C12A2931EFECA5800E0C5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C12A2951EFECA5800E0C5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C12A29C1EFED2F100E0C5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
+		9C12A29F1EFED65C00E0C5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTable.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		9C12A2831EFECA5800E0C5B2 /* UICatalog */ = {
 			isa = PBXGroup;
 			children = (
+				9C12A29E1EFED65C00E0C5B2 /* MainTable.storyboard */,
 				9C12A29B1EFED2F100E0C5B2 /* Main1.storyboard */,
 				9C12A2871EFECA5800E0C5B2 /* AppDelegate.h */,
 				9C12A2881EFECA5800E0C5B2 /* AppDelegate.m */,
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C12A2A01EFED65C00E0C5B2 /* MainTable.storyboard in Resources */,
 				9C12A2941EFECA5800E0C5B2 /* LaunchScreen.storyboard in Resources */,
 				9C12A29D1EFED2F100E0C5B2 /* Main1.storyboard in Resources */,
 				9C12A2911EFECA5800E0C5B2 /* Assets.xcassets in Resources */,
@@ -186,6 +190,14 @@
 				9C12A29C1EFED2F100E0C5B2 /* Base */,
 			);
 			name = Main1.storyboard;
+			sourceTree = "<group>";
+		};
+		9C12A29E1EFED65C00E0C5B2 /* MainTable.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C12A29F1EFED65C00E0C5B2 /* Base */,
+			);
+			name = MainTable.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
