@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		963691CE1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */; };
+		963691D11EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 963691CF1EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.cpp */; };
 		969398091ECA82ED00566798 /* Leetcode_32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969398071ECA82ED00566798 /* Leetcode_32.cpp */; };
+		96DE2B751EFCD08D00AB72EE /* Array_Nesting_565.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DE2B731EFCD08D00AB72EE /* Array_Nesting_565.cpp */; };
 		9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */; };
 		9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */; };
 		9C967FE81E1796F400306831 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C967FE71E1796F400306831 /* main.cpp */; };
@@ -30,8 +32,12 @@
 
 /* Begin PBXFileReference section */
 		963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Merge_Two_Binary_Trees_617.cpp; sourceTree = "<group>"; };
+		963691CF1EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Median_of_Two_Sorted_Arrays_4.cpp; sourceTree = "<group>"; };
+		963691D01EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Median_of_Two_Sorted_Arrays_4.hpp; sourceTree = "<group>"; };
 		969398071ECA82ED00566798 /* Leetcode_32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leetcode_32.cpp; sourceTree = "<group>"; };
 		969398081ECA82ED00566798 /* Leetcode_32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Leetcode_32.hpp; sourceTree = "<group>"; };
+		96DE2B731EFCD08D00AB72EE /* Array_Nesting_565.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_Nesting_565.cpp; sourceTree = "<group>"; };
+		96DE2B741EFCD08D00AB72EE /* Array_Nesting_565.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array_Nesting_565.hpp; sourceTree = "<group>"; };
 		9C4102911E1BEB7400E9197C /* LinuxEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxEnvironment.cpp; sourceTree = "<group>"; };
 		9C4102921E1BEB7400E9197C /* LinuxEnvironment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinuxEnvironment.hpp; sourceTree = "<group>"; };
 		9C75B2671EF6D12D00DFCA99 /* word_pattern_290.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = word_pattern_290.cpp; path = ../word_pattern_290.cpp; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 				969398071ECA82ED00566798 /* Leetcode_32.cpp */,
 				969398081ECA82ED00566798 /* Leetcode_32.hpp */,
 				963691CD1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp */,
+				963691CF1EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.cpp */,
+				963691D01EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.hpp */,
+				96DE2B731EFCD08D00AB72EE /* Array_Nesting_565.cpp */,
+				96DE2B741EFCD08D00AB72EE /* Array_Nesting_565.hpp */,
 			);
 			path = LinuxSystemAPI;
 			sourceTree = "<group>";
@@ -152,9 +162,11 @@
 				9C967FE81E1796F400306831 /* main.cpp in Sources */,
 				9C967FF01E17974000306831 /* FileAccess.cpp in Sources */,
 				963691CE1EF74F18009257FD /* Merge_Two_Binary_Trees_617.cpp in Sources */,
+				963691D11EFA0D27009257FD /* Median_of_Two_Sorted_Arrays_4.cpp in Sources */,
 				9C75B2691EF6D12D00DFCA99 /* word_pattern_290.cpp in Sources */,
 				9CCCFFF61E1F551F006E2E67 /* LinuxTerminal.cpp in Sources */,
 				9C4102931E1BEB7400E9197C /* LinuxEnvironment.cpp in Sources */,
+				96DE2B751EFCD08D00AB72EE /* Array_Nesting_565.cpp in Sources */,
 				969398091ECA82ED00566798 /* Leetcode_32.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
