@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TestViewController.h
 //  UICatalog
 //
 //  Created by eddy.wu on 6/27/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
-
+@interface TestViewController : UIViewController
 
 @end
-

@@ -14,9 +14,84 @@
 
 @implementation ViewController
 
+NSMutableArray *listOfMovies;
+
 - (void)viewDidLoad {
+    
+    //----initialize the array----
+    listOfMovies = [[NSMutableArray alloc] init];
+    //----add items----
+    [listOfMovies addObject:@"Training Day"];
+    [listOfMovies addObject:@"Remember the Titans"];
+    [listOfMovies addObject:@"John Q."];
+    [listOfMovies addObject:@"The Bone Collector"];
+    [listOfMovies addObject:@"Ricochet"];
+    [listOfMovies addObject:@"The Siege"];
+    [listOfMovies addObject:@"Malcolm X"];
+    [listOfMovies addObject:@"Antwone Fisher"];
+    [listOfMovies addObject:@"Courage Under Fire"];
+    [listOfMovies addObject:@"He Got Game"];
+    [listOfMovies addObject:@"The Pelican Brief"];
+    [listOfMovies addObject:@"Glory"];
+    [listOfMovies addObject:@"The Preacher’s Wife"];
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    //---try to get a reusable cell---
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //----create new cell if no reusable cell is available----
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:CellIdentifier];
+        
+    }
+    //----set the text to display for the cell----
+    NSString *cellValue = [listOfMovies objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellValue;
+    
+    return cell;
+}
+
+//----set the number of rows in the table view----
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return [listOfMovies count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section{
+    //---display “Movie List” as the header---
+    return @"Movie List";
+}
+- (NSString *)tableView:(UITableView *)tableView
+titleForFooterInSection:(NSInteger)section {
+    return @"by Eddy Wu";
+}
+
+- (void) tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *movieSelected = [listOfMovies objectAtIndex:indexPath.row];
+    NSString *message = [NSString stringWithFormat:@"You have selected %@",movieSelected];
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:movieSelected
+                               message:message
+                              delegate:self
+                     cancelButtonTitle:@"OK"
+                     otherButtonTitles:nil];
+    [alert show];
+    
+    
+}
+
+// modify the height of Cell
+- (CGFloat) tableView:(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
 }
 
 - (void)didReceiveMemoryWarning {
