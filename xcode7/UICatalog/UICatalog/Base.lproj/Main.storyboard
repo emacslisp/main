@@ -31,7 +31,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pZu-OS-Qt8"/>
                     <connections>
-                        <segue destination="Pkt-tE-g3e" kind="show" id="o4g-DN-Wlk"/>
+                        <segue destination="Pkt-tE-g3e" kind="push" identifier="SegueTestView" id="o4g-DN-Wlk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,8 +49,9 @@
                     <view key="view" contentMode="scaleToFill" id="tQ2-iK-8TA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.2235060596" blue="0.1976705732" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r9G-lE-9JC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a8-9H-0oW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

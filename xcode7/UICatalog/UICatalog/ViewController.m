@@ -119,13 +119,13 @@ titleForFooterInSection:(NSInteger)section {
 - (void) tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *movieSelected = [listOfMovies objectAtIndex:indexPath.row];
-    NSString *message = [NSString stringWithFormat:@"You have selected %@",movieSelected];
+    //NSString *message = [NSString stringWithFormat:@"You have selected %@",movieSelected];
   
-    [self alert:@"warn" :message];
+    //[self alert:@"warn" :message];
+
+        [self performSegueWithIdentifier:@"SegueTestView" sender:self];
     
 }
-
-
 
 // modify the height of Cell
 - (CGFloat) tableView:(UITableView *)tableView
