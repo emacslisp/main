@@ -73,20 +73,59 @@ titleForFooterInSection:(NSInteger)section {
     return @"by Eddy Wu";
 }
 
+- (void) alert: (NSString*)title :(NSString *)message {
+    UIAlertController * view=   [UIAlertController
+                                 alertControllerWithTitle:title
+                                 message:message
+                                 preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             //Do some thing here
+                             [view dismissViewControllerAnimated:YES completion:nil];
+                             
+                         }];
+    UIAlertAction* cancel = [UIAlertAction
+                             actionWithTitle:@"Cancel"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [view dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+    
+    
+    [view addAction:ok];
+    [view addAction:cancel];
+    [self presentViewController:view animated:YES completion:nil];
+}
+
+/*
+ -(void) Show :(NSString *)title :(NSString *)message
+ {
+ UIAlertView *alert =
+ [[UIAlertView alloc] initWithTitle:title
+ message:message
+ delegate:self
+ cancelButtonTitle:@\"OK\"
+ otherButtonTitles:nil];
+ [alert show];
+ }
+ */
+
 - (void) tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *movieSelected = [listOfMovies objectAtIndex:indexPath.row];
     NSString *message = [NSString stringWithFormat:@"You have selected %@",movieSelected];
-    UIAlertView *alert =
-    [[UIAlertView alloc] initWithTitle:movieSelected
-                               message:message
-                              delegate:self
-                     cancelButtonTitle:@"OK"
-                     otherButtonTitles:nil];
-    [alert show];
-    
+  
+    [self alert:@"warn" :message];
     
 }
+
+
 
 // modify the height of Cell
 - (CGFloat) tableView:(UITableView *)tableView

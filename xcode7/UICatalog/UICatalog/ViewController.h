@@ -10,6 +10,6 @@
 
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
-
+- (void) alert: (NSString*)title :(NSString *)message;
 @end
 
