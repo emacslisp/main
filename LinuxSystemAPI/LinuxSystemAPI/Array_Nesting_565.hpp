@@ -32,6 +32,6 @@ public:
         
         return result;
     }
-}
+};
 
 #endif /* Array_Nesting_565_hpp */
