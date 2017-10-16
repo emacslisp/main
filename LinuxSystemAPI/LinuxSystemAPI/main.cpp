@@ -12,8 +12,9 @@
 #include "Leetcode_32.hpp"
 #include "word_pattern_290.hpp"
 #include "Merge_Two_Binary_Trees_617.cpp"
+#include "VectorTest.hpp"
 
 int main(int argc,  char *  argv[]) {
-    Merge_Two_Binary_Trees s;
-    s.main_entry();
+    VectorTest s;
+    s.vectorTest();
 }
